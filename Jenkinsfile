@@ -1,10 +1,3 @@
-pipeline {
-    agent { docker { image 'python:3.5.1' } }
-    stages {
-        stage('build') {
-            steps {
-                bash 'python --version'
-            }
-        }
-    }
+node {
+    echo "hello world"
 }
